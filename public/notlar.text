@@ -3,3 +3,9 @@
 3)burgeringredients folderine burger ingredients css eklendi ve ingredienstler belirlendi bu dosyada
 4)burgerjs dosyasi kuruldu ve burger ingredients tipleri girildi. burger ingredients dosyasi burger import edildi. burgerin css dosyasida kuruldu.
 5)burger js burgerbuildere import edilde ve kullanildi
+6)burger builderde state olusturuldu
+7)olusturulan state burger js de kullanildi map ve reduce methotlariyla birlikte.
+8)buildcontrols componenti olusturuldu
+9)buildcontrolsun icinde buildcontrols.js ve buildcontrols.module.css ile buildcontrol klasoru olusturuldu
+10)buildcontrol klasorunun icinde buildcontrol.js ile buildcontrol.module.css dosyalari olusturuldu.
+11)buildcontrols.js ve buildcontrols.module.jss klasorlerinin icerigi dolduruldu. buildcontrol.js buildcontrols.js inin icine import edildi
