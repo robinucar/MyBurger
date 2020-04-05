@@ -1,0 +1,5 @@
+1) containerste burger builder kuruldu ve bu burger builder app js ye import edildi. burgerin butun islemleri burda yapiliyor.
+2)Burger ingredients kuruldu ve case lerle burgerin ingredientleri verildi.
+3)burgeringredients folderine burger ingredients css eklendi ve ingredienstler belirlendi bu dosyada
+4)burgerjs dosyasi kuruldu ve burger ingredients tipleri girildi. burger ingredients dosyasi burger import edildi. burgerin css dosyasida kuruldu.
+5)burger js burgerbuildere import edilde ve kullanildi
