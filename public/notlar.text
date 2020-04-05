@@ -9,3 +9,10 @@
 9)buildcontrolsun icinde buildcontrols.js ve buildcontrols.module.css ile buildcontrol klasoru olusturuldu
 10)buildcontrol klasorunun icinde buildcontrol.js ile buildcontrol.module.css dosyalari olusturuldu.
 11)buildcontrols.js ve buildcontrols.module.jss klasorlerinin icerigi dolduruldu. buildcontrol.js buildcontrols.js inin icine import edildi
+12 build burgerin icine addingredients haandler methodu eklendi;
+13)addingredientshandler buildcontrols js nin icine props olarak eklendi.
+14)build burgerin icine removeingredients haandler methodu eklendi;
+15)removeingredientshandler buildcontrols js nin icine props olarak eklendi.
+16)ingredient olmadiginda less buttonu islevsizlestirildi
+17)ingredient omadigi zaman less butonunun tiklanma ozelligi engellendi.
+18)price ozelligi eklendi.
