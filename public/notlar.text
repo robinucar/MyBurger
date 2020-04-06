@@ -16,3 +16,8 @@
 16)ingredient olmadiginda less buttonu islevsizlestirildi
 17)ingredient omadigi zaman less butonunun tiklanma ozelligi engellendi.
 18)price ozelligi eklendi.
+19)siparis butonu ekleme
+20)build controls ta order buttonu yaratildi;
+21 )build burger da update state ile statusu yaratildi
+22)buld burger da props olarak eklendi
+23) build burgerda yaratilan metod burger controlsa order buttonuna props olarak eklendi
