@@ -37,3 +37,6 @@
   b)backdrop compoonenti model componentinin icerisine import edildi.
   c)backdropa click ozelligi verildi
   d)click ozelligi modalClosed propsu olarak modal componentinin icerisindeki backdrop tagina tanitildi
+30)Ui folderi icerisinde button componenti olusturuldu ve button.module.css dosyasi olusturuldu. ardindan button componenti icerisinde style dinamiik olarak elendi
+31)button componenti order summary componentine import edildi btnType ve clicked ozellikleri eklendi.
+32)burgerbuilder componentinde cancel ve continue metotlari yaratildi
