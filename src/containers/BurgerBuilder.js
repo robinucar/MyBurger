@@ -93,6 +93,7 @@ const INGREDIENTS_PRICE = {
           <OrderSummary ingredients = { this.state.ingredients }
                         purchaseCancelled = {this.purchasingCancelHandler}
                         purchaseContinued = {this.purhasingContinueHandler}
+                        price = {this.state.totalPrice}
           />
         </Modal>
         <Burger ingredients = {this.state.ingredients}/>
