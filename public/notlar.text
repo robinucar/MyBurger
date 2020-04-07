@@ -25,3 +25,15 @@
 25) ui folderin icerisine modal folder klasoru ve onun icine modal.js
 26)ui folderin icerisine backdrop folder ve onun icerisine backdrop.js
 27)burger componentinin icerisinde order summary componenti olusturuldu. order listesi hazirlandi. daha sonra order summary burger builder componentine import edildi ve modal taginin icerisine yerlestirildi
+28)a)modal componentini animate etmek icin burgerbuilderde yeni bir state olusturdum purchasing olarak ve default olarak false degerini verdim.
+  b)purchasingHandler methodu olusturuldu ve purchasing state true olarak degistirildi.
+  c)burgercontrols componentindeki order buttonuna onclick ozelligi eklendi ve props olarak ordered degeri verildi.
+  d)buirgerbuilder componentine ordered propsu tanitildi ve propsa method olarak purchasingHandler metodu verildi.
+  e)burgerbuilder componentinin icerisindeki modal tagina show propsu eklendi ve deger olarak purchasin state verildi.
+  f)modal componentinin icerisinde animasyonu olusturmak icin css degerleri girildi.
+
+29)arkafon eklemek icin
+  a)backdrop componenti yaratildi ve backdrop css dosyasi olusturuldu. gerekli stiller verildi
+  b)backdrop compoonenti model componentinin icerisine import edildi.
+  c)backdropa click ozelligi verildi
+  d)click ozelligi modalClosed propsu olarak modal componentinin icerisindeki backdrop tagina tanitildi

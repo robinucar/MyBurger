@@ -69,7 +69,11 @@ const INGREDIENTS_PRICE = {
     }
 
     purchasingHandler = () => {
-      this.setState({purchasing: true})
+      this.setState({purchasing: true});
+    }
+
+    purchasingCancelHandler = () => {
+      this.setState({purchasing: false});
     }
 
   render() {
@@ -81,7 +85,7 @@ const INGREDIENTS_PRICE = {
     }
     return (
       <Aux>
-        <Modal show = {this.state.purchasing}>
+        <Modal show = {this.state.purchasing} modalClosed = {this.purchasingCancelHandler}>
           <OrderSummary ingredients = { this.state.ingredients }/>
         </Modal>
         <Burger ingredients = {this.state.ingredients}/>
