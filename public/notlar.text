@@ -43,3 +43,7 @@
 33) ordersummary componente total price paragrafi eklendi ve price propsu yaratildi burger builderde price propsu suna total price state degeri verildi
 34)navbar klasoru olusturuldu. icinde toolbar componenti olusturuldu ve toolbar.module.css olusturuldu.
 35)layout componentine toolbar componenti import edildi
+36)logo componenti yaratildi;
+37)logo resmi png uzantili indirilip assestlerdeki images dosyasina kaydedildi.
+38) logo.module.css dosyasi yaratildi logo.js ye import edildi
+39)logo componenti toolbar componentine import edildi.
