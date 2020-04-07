@@ -21,3 +21,7 @@
 21 )build burger da update state ile statusu yaratildi
 22)buld burger da props olarak eklendi
 23) build burgerda yaratilan metod burger controlsa order buttonuna props olarak eklendi
+24) ui folder
+25) ui folderin icerisine modal folder klasoru ve onun icine modal.js
+26)ui folderin icerisine backdrop folder ve onun icerisine backdrop.js
+27)burger componentinin icerisinde order summary componenti olusturuldu. order listesi hazirlandi. daha sonra order summary burger builder componentine import edildi ve modal taginin icerisine yerlestirildi
