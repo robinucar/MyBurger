@@ -47,3 +47,7 @@
 37)logo resmi png uzantili indirilip assestlerdeki images dosyasina kaydedildi.
 38) logo.module.css dosyasi yaratildi logo.js ye import edildi
 39)logo componenti toolbar componentine import edildi.
+40) NavigationItems folderi yaratildi icerisine navigationitems.js ve navigationItems.module.css doyalari yaratildi.
+41)NavigationItems folderinin icerisine NavigationItem folderi yaratildi ve icerisinde navigationitem.js ve navigationitem.module.css doyalari yaratildi.
+42)navigationitem.js componenti navigationItems.js componentine import edildi.
+43)NavigationItems.js componenti toolbar componentine import edildi
