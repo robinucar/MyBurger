@@ -7,6 +7,8 @@ const NavigationItem = (props) => (
       href= { props.link }
       className= {props.active ? styles.active : null}> { props.children }
     </a>
+    <div><h1>HERE I AM</h1></div>
+
  </li>
 )
 

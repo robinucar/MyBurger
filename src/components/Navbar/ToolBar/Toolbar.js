@@ -13,6 +13,9 @@ const Toolbar = (props) => (
       </div>
       <nav className = {styles.DesktopOnly}>
         <NavigationItems />
+        <NavigationItems />
+        <NavigationItems />
+        <NavigationItems />
       </nav>
     </header>
   )
