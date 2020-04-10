@@ -19,7 +19,7 @@ const SideDrawer = ( props ) => {
         </div>
         <nav>
           <NavigationItems />
-          <h2>WHAT HAPPENED?</h2>
+
         </nav>
       </div>
     </Aux>
