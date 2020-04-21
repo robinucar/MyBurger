@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from '../../../components/UI/Button/Button';
-import styles from '../CondactData/ContactData.module.css';
+
 import axios from '../../../axios-orders';
 
 class ContactData extends Component {
@@ -50,16 +50,16 @@ class ContactData extends Component {
 
   render() {
     return (
-      <div className = {styles.ContactData}>
+      <div>
         <h4>Enter your Contact details below please</h4>
         <form>
 
-        <input className = {styles.Input} type="text" name="name" placeholder="Your Name: "/>
-        <input className = {styles.Input} type="email" name="email" placeholder="E Mail: "/>
-        <input className = {styles.Input} type="text" name="streetName" placeholder="Street Name: "/>
-        <input className = {styles.Input} type="text" name="flatName" placeholder="Flat Name: "/>
-        <input className = {styles.Input} type="number" name="flatNumber" placeholder="Flat Number:  "/>
-        <input className = {styles.Input} type="text" name="postCode" placeholder="Post Code: "/>
+        <input  type="text" name="name" placeholder="Your Name: "/>
+        <input  type="email" name="email" placeholder="E Mail: "/>
+        <input  type="text" name="streetName" placeholder="Street Name: "/>
+        <input  type="text" name="flatName" placeholder="Flat Name: "/>
+        <input  type="number" name="flatNumber" placeholder="Flat Number:  "/>
+        <input  type="text" name="postCode" placeholder="Post Code: "/>
         <Button
         btnType = 'Success'
         clicked = {this.orderHandler}>ORDER</Button>
