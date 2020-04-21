@@ -24,7 +24,7 @@ class ContactData extends Component {
         ingredients: this.props.ingredients,
         price: this.props.price + ' £',
         customer: {
-          name: 'Mehmet Ucar',
+          name: 'Mehmet Ucar',git log
           adress: {
             street: 'Woodberry Down Estate',
             house: 'Knaresborough House',
