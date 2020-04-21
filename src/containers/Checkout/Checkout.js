@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 import CheckoutSummary from '../../components/Order/CheckoutSummary/CheckoutSummary';
-import ContactData from '../../containers/Checkout/CondactData/ContactData';
-
 
 class Checkout extends Component {
   state = {
@@ -10,6 +7,7 @@ class Checkout extends Component {
     price:0
   }
 
+<<<<<<< HEAD
   componentWillMount() {
     const query = new URLSearchParams(this.props.location.search);
     const ingredients = {};
@@ -25,6 +23,8 @@ class Checkout extends Component {
     this.setState({ingredients: ingredients, totalPrice: price})
   }
 
+=======
+>>>>>>> parent of 59ff674... navigated ContactData component
   checkoutCancelledHandler = () => {
     this.props.history.goBack();
   }
@@ -40,9 +40,12 @@ class Checkout extends Component {
                          checkoutCancelled = {this.checkoutCancelledHandler}
                          checkoutContinued = {this.checkoutContinuedHandler}
         />
+<<<<<<< HEAD
         <Route path = {this.props.match.path + '/contact-data'}
                render = {() => (<ContactData ingredients = {this.state.ingredients}
                                               />)} />
+=======
+>>>>>>> parent of 59ff674... navigated ContactData component
       </div>
     )
   }

@@ -88,6 +88,7 @@ const INGREDIENTS_PRICE = {
     }
 
     purhasingContinueHandler = () => {
+<<<<<<< HEAD
 
 
       const queryParams = [];
@@ -100,6 +101,36 @@ const INGREDIENTS_PRICE = {
         pathname: '/checkout',
         search: '?' + queryString
       })
+=======
+     /*  this.setState({loading: true})
+
+      const order = {
+        ingredients: this.state.ingredients,
+        price: this.state.totalPrice + ' £',
+        customer: {
+          name: 'Mehmet Ucar',
+          adress: {
+            street: 'Woodberry Down Estate',
+            house: 'Knaresborough House',
+            number: '27',
+            postcode: 'N4 2TS',
+            city: 'London',
+            country: 'The United Kongdom'
+          },
+          email: 'mehmet.ucar@imediapro.co.uk'
+
+        },
+        deliveryMethod: 'fastest'
+      }
+      axios.post('/orders.json', order)
+      .then(response => {
+        this.setState({loading:false, purchasing: false})
+      })
+      .catch(error => {
+        this.setState({loading:false, purchasing: false})
+      }) */
+      this.props.history.push('/checkout')
+>>>>>>> parent of 59ff674... navigated ContactData component
   }
 
   render() {
