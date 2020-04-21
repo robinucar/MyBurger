@@ -88,39 +88,13 @@ const INGREDIENTS_PRICE = {
     }
 
     purhasingContinueHandler = () => {
-     /*  this.setState({loading: true})
 
-      const order = {
-        ingredients: this.state.ingredients,
-        price: this.state.totalPrice + ' £',
-        customer: {
-          name: 'Mehmet Ucar',
-          adress: {
-            street: 'Woodberry Down Estate',
-            house: 'Knaresborough House',
-            number: '27',
-            postcode: 'N4 2TS',
-            city: 'London',
-            country: 'The United Kongdom'
-          },
-          email: 'mehmet.ucar@imediapro.co.uk'
-
-        },
-        deliveryMethod: 'fastest'
-      }
-      axios.post('/orders.json', order)
-      .then(response => {
-        this.setState({loading:false, purchasing: false})
-      })
-      .catch(error => {
-        this.setState({loading:false, purchasing: false})
-      }) */
 
       const queryParams = [];
       for(let i in this.state.ingredients) {
         queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]))
       }
-
+      queryParams.push('price = ' + this.state.totalPrice);
       const queryString = queryParams.join('&');
       this.props.history.push({
         pathname: '/checkout',
