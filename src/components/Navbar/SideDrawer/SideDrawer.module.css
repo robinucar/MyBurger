@@ -1,6 +1,6 @@
 .SideDrawer {
   position: fixed;
-  width: 288px;
+  width: 280px;
   max-width: 70%;
   height: 100%;
   left: 0;
@@ -14,7 +14,7 @@
 
 @media (min-width: 500px) {
   .SideDrawer {
-    display: none;
+      display: none;
   }
 }
 
