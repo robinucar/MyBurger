@@ -1,8 +1,7 @@
 import React, { Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Layout from './hoc/Layout/Layout';
-import BurgerBuilder from './containers/BurgerBuilder';
-import Checkout from './containers/Checkout/Checkout';
+import BurgerBuilder from './containers/BurgerBuilder'
 
 
 class App extends Component{
@@ -14,7 +13,6 @@ class App extends Component{
 
       <Layout>
         <BurgerBuilder />
-        <Checkout />
       </Layout>
 
       </div>
