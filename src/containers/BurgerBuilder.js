@@ -97,6 +97,7 @@ const INGREDIENTS_PRICE = {
       .then(response => console.log(response))
       .catch(error => console.log(error))
     }
+<<<<<<< HEAD
 
 
 
@@ -111,6 +112,8 @@ const INGREDIENTS_PRICE = {
         search: '?' + queryString
       }) */
 
+=======
+>>>>>>> parent of 94ba9d6... changes back
 
   render() {
     const disabledInfo = {
