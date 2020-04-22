@@ -88,19 +88,14 @@ const INGREDIENTS_PRICE = {
     }
 
     purhasingContinueHandler = () => {
-      this.setState({loading: true});
       const order = {
         ingredients: this.state.ingredients,
         price: this.state.totalPrice + ' £',
         deliveryMethod: 'fastest'
       }
       axios.post('/orders.json', order)
-      .then(response => {
-        this.setState({loading:false, purchasing: false})
-      })
-      .catch(error => {
-        this.setState({loading:false, purchasing: false})
-      })
+      .then(response => console.log(response))
+      .catch(error => console.log(error))
     }
 
 
@@ -153,7 +148,11 @@ const INGREDIENTS_PRICE = {
     return (
       <Aux>
         <Modal show = {this.state.purchasing} modalClosed = {this.purchasingCancelHandler}>
-          {orderSummary}
+          <OrderSummary ingredients = { this.state.ingredients }
+                        purchaseCancelled = {this.purchasingCancelHandler}
+                        purchaseContinued = {this.purhasingContinueHandler}
+                        price = {this.state.totalPrice}
+          />
         </Modal>
         {burger}
       </Aux>
