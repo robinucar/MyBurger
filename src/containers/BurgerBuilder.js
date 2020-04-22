@@ -88,9 +88,24 @@ const INGREDIENTS_PRICE = {
     }
 
     purhasingContinueHandler = () => {
+      this.setState({loading: true});
+      const order = {
+        ingredients: this.state.ingredients,
+        price: this.state.totalPrice + ' £',
+        deliveryMethod: 'fastest'
+      }
+      axios.post('/orders.json', order)
+      .then(response => {
+        this.setState({loading:false, purchasing: false})
+      })
+      .catch(error => {
+        this.setState({loading:false, purchasing: false})
+      })
+    }
 
 
-      const queryParams = [];
+
+      /* const queryParams = [];
       for(let i in this.state.ingredients) {
         queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]))
       }
@@ -99,8 +114,8 @@ const INGREDIENTS_PRICE = {
       this.props.history.push({
         pathname: '/checkout',
         search: '?' + queryString
-      })
-  }
+      }) */
+
 
   render() {
     const disabledInfo = {
@@ -145,4 +160,5 @@ const INGREDIENTS_PRICE = {
     )
   }
 }
+
 export default withErrorHandler(BurgerBuilder, axios);

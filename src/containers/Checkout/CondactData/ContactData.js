@@ -20,11 +20,11 @@ class ContactData extends Component {
     event.preventDefault();
     this.setState({loading: true})
 
-      const order = {
-        ingredients: this.props.ingredients,
+      //const order = {
+        /* ingredients: this.props.ingredients,
         price: this.props.price + ' £',
         customer: {
-          name: 'Mehmet Ucar',git log
+          name: 'Mehmet Ucar',
           adress: {
             street: 'Woodberry Down Estate',
             house: 'Knaresborough House',
@@ -44,10 +44,10 @@ class ContactData extends Component {
       })
       .catch(error => {
         this.setState({loading:false})
-      })
+      }) */
 
   }
-
+}
   render() {
     return (
       <div>
@@ -68,6 +68,7 @@ class ContactData extends Component {
       </div>
     )
   }
+
 }
 
 export default ContactData;
