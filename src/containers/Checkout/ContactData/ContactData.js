@@ -7,15 +7,86 @@ import Input from '../../../components/UI/Input/Input';
 
 class ContactData extends Component {
   state = {
-    name: '',
-    email: '',
-    address: {
-      street: '',
-      flat: '',
-      number: '',
-      postCode: '',
-      city: ''
+    orderForm: {
+
+        name: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'text',
+            placeholder: 'Fullname'
+          },
+          value: ''
+        },
+
+        street: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'text',
+            placeholder: 'Street'
+        },
+        value: ''
+      },
+        flat: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'text',
+            placeholder: 'House Name'
+        },
+        value: ''
+      },
+        number: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'number',
+            placeholder: 'Flat Number'
+        },
+        value: ''
+      },
+        postCode: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'text',
+            placeholder: 'Post Code'
+        },
+        value: ''
+      },
+        city: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'text',
+            placeholder: 'City'
+        },
+        value: ''
+      },
+        email: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'email',
+            placeholder: 'E-mail'
+        },
+        value: ''
+      },
+        telNumber: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'tel',
+            placeholder: 'Phone Number'
+        },
+        value: ''
+      },
+        deliveryMethod: {
+          elementType: 'select',
+          elementConfig: {
+            options: [
+              {value: 'fastest', displayValue: 'Fastest'},
+              {value: 'cheapest', displayValue: 'Cheapest'},
+            ],
+        },
+        value: ''
+      },
+
     },
+
     loading: false
   }
 
@@ -25,18 +96,7 @@ class ContactData extends Component {
         const order = {
             ingredients: this.props.ingredients,
             price: this.props.price,
-            customer: {
-                name: 'Mehmet Ucar',
-                email: 'ucarmehmet.ch@gmail.com',
-                address: {
-                    street: 'Woodberry Down',
-                    flat: 'Knaresbrough House',
-                    number: '27',
-                    postCode: 'N4 2TS',
-                    city: 'LONDON'
-                },
-                deliveryMethod: 'fastest'
-            },
+
 
         }
         axios.post( '/orders.json', order )
@@ -50,17 +110,23 @@ class ContactData extends Component {
   }
 
   render() {
+    const formElementsArray = [];
+    for (let key in this.state.orderForm) {
+      formElementsArray.push({
+        id: key,
+        config: this.state.orderForm[key]
+      });
+    };
     let form = (
       <form>
+        {formElementsArray.map(formElement => (
+          <Input
+              key = {formElement.id}
+              elementType = {formElement.config.elementType}
+              elementConfig = {formElement.config.elementConfig}
+              value = {formElement.config.value} />
+        ))};
 
-        <Input inputtype='input' type="text" name='fullName' placeholder='Full Name'/>
-        <Input inputtype='input' type="email" name='email' placeholder='E-mail'/>
-        <Input inputtype='input' type="text" name='street' placeholder='Street'/>
-        <Input inputtype='input' type="text" name='flat' placeholder='flat'/>
-        <Input inputtype='input' type="number" name='number' placeholder='Flat Number'/>
-        <Input inputtype='input' type="text" name='postCode' placeholder='Post Code'/>
-        <Input inputtype='input' type="text" name='city' placeholder='City'/>
-        <Input inputtype='input' type="tel" name='tel' placeholder='Phone Number'/>
         <Button btnType='Success' clicked={this.orderHandler}>Order</Button>
 
     </form>
