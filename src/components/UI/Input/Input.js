@@ -7,6 +7,7 @@ const Input = (props) => {
   if (props.inValid && props.shouldValidate && props.touched) {
     inputClasses.push(classes.InValid);
   }
+
   switch (props.elementType) {
     case ('input'):
       inputElement = <input
@@ -51,6 +52,7 @@ const Input = (props) => {
     <div className={classes.Input}>
       <label className={classes.Label}>{props.label}</label>
       {inputElement}
+
     </div>
   )
 }
