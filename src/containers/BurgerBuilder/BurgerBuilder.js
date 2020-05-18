@@ -44,8 +44,8 @@ const  BurgerBuilder = props => {
     }
 
     const purchaseContinueHandler = () => {
-            this.props.onInitPurchase()
-            this.props.history.push('/checkout')
+            props.onInitPurchase()
+            props.history.push('/checkout')
 
 
 
