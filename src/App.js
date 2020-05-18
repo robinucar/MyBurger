@@ -39,7 +39,7 @@ const App = props => {
             <Route path = '/checkout' render = {() => <Checkout />}/>
             <Route path = '/orders' render = {() => <Orders />}/>
             <Route path = '/logout' component = {Logout}/>
-            <Route path = '/auth' render = {() => <Auth />}/>
+            <Route path = '/auth' render = {Auth}/>
             <Route path = '/' exact component = {BurgerBuilder}/>
             <Redirect to='/' />
           </Switch>
